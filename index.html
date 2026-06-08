@@ -63,7 +63,7 @@
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-location-dot animate-bounce text-yellow-400"></i>
-                <span class="font-medium tracking-wide" data-translate="top-address">Rohini Towers, Brodipet 2/11, Guntur</span>
+                <span class="font-medium tracking-wide" data-translate="top-address">Rohini Towers, Brodipet, Guntur</span>
             </div>
             <div class="flex flex-wrap justify-center items-center gap-4">
                 <a href="tel:8008145999" class="hover:text-white transition-colors duration-200 font-semibold"><i class="fa-solid fa-phone mr-1"></i> 8008145999</a>
@@ -92,7 +92,7 @@
                             Sri Venkateswara Institutions
                         </h1>
                         <p class="text-xs text-brandRed font-bold uppercase tracking-wider" id="sub-title">
-                            Rohini Towers, Brodipet, Guntur
+                            Rohini Towers, Brodipet 2/11, Guntur
                         </p>
                     </div>
                 </div>
@@ -177,7 +177,6 @@
                             <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">C.E.C.</span>
                             <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">H.E.C.</span>
                         </div>
-                        <p class="text-xs text-gray-300" data-translate="hero-age-limit">📌 Direct entry available for candidates from age 18 onwards</p>
                     </div>
 
                     <!-- Direct Degrees & PG Banner -->
@@ -721,7 +720,7 @@
 
                             <!-- Submit Button -->
                             <button type="submit" class="w-full bg-brandRed hover:bg-brandBlue text-white font-extrabold py-4 rounded-xl transition-all shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base">
-                                <i class="fa-solid fa-paper-plane"></i>
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
                                 <span data-translate="btn-submit">Submit Inquiry Now</span>
                             </button>
                         </form>
@@ -1239,7 +1238,7 @@
 
             if (currentLanguage === 'te') {
                 mainTitle.innerText = "శ్రీ వెంకటేశ్వర ఇన్స్టిట్యూషన్స్";
-                subTitle.innerText = "రోహిణి టవర్స్, బ్రాడీపేట, గుంటూరు";
+                subTitle.innerText = "రోహిణి టవర్స్, బ్రాడీపేట 2/11, గుంటూరు";
                 langBtnText.innerText = "Read in English";
 
                 // Form placeholders
@@ -1249,7 +1248,7 @@
                 document.getElementById('form-msg').placeholder = "మీ గత చదువు లేదా గ్యాప్ వివరాలు ఇక్కడ వ్రాయండి...";
             } else {
                 mainTitle.innerText = "Sri Venkateswara Institutions";
-                subTitle.innerText = "Rohini Towers, Brodipet, Guntur";
+                subTitle.innerText = "Rohini Towers, Brodipet 2/11, Guntur";
                 langBtnText.innerText = "తెలుగు లో చదవండి";
 
                 // Form placeholders
@@ -1451,6 +1450,18 @@
             const course = document.getElementById('form-course').value;
             const city = document.getElementById('form-city').value;
             const msg = document.getElementById('form-msg').value;
+
+            // WhatsApp Integration for Inquiry Form
+            const whatsappNumber = "918008145999";
+            let text = `*New Admission Inquiry*%0A%0A`;
+            text += `*Name:* ${name}%0A`;
+            text += `*Phone:* ${phone}%0A`;
+            text += `*Course:* ${course}%0A`;
+            text += `*City:* ${city}%0A`;
+            if (msg.trim() !== '') {
+                text += `*Message:* ${msg}%0A`;
+            }
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
 
             // Trigger success message inside modal block
             notification.classList.remove('hidden', 'bg-red-100', 'text-red-800', 'bg-green-100', 'text-green-800');
