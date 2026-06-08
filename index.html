@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Venkateswara Institutions - Direct 10th, Inter, Degree Admissions Guntur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for English and Telugu -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ramabhadra&family=NTR&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0c1a40', // Deep Royal Blue from flyer
+                        brandRed: '#d91e18', // Bright Red from flyer
+                        brandYellow: '#f9d423', // Gold Yellow from flyer
+                        brandDarkYellow: '#e0b807',
+                        brandLightBlue: '#1e2d5a',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        telugu: ['NTR', 'Ramabhadra', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-gradient {
+            background: linear-gradient(135deg, #0c1a40 0%, #1e2d5a 100%);
+        }
+        
+        .yellow-gradient {
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+        }
+        
+        .telugu-font {
+            font-family: 'NTR', 'Ramabhadra', sans-serif;
+        }
+        /* Custom styles for animations & layout */
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col antialiased">
+
+    <!-- TOP TELEPHONE INFO BAR -->
+    <div class="bg-brandBlue text-yellow-300 py-2 px-4 text-xs sm:text-sm border-b border-yellow-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-location-dot animate-bounce text-yellow-400"></i>
+                <span class="font-medium tracking-wide" data-translate="top-address">Rohini Towers, Brodipet 2/11, Guntur</span>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="tel:8008145999" class="hover:text-white transition-colors duration-200 font-semibold"><i class="fa-solid fa-phone mr-1"></i> 8008145999</a>
+                <a href="tel:9849937266" class="hover:text-white transition-colors duration-200 font-semibold"><i class="fa-solid fa-phone mr-1"></i> 9849937266</a>
+                <span class="hidden md:inline">|</span>
+                <button onclick="toggleLanguage()" class="bg-yellow-400 text-brandBlue px-3 py-0.5 rounded-full font-bold text-xs hover:bg-white transition-all transform hover:scale-105 flex items-center gap-1 shadow-md">
+                    <i class="fa-solid fa-language"></i>
+                    <span id="lang-btn-text">తెలుగు లో చదవండి</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md border-b-4 border-brandYellow transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Institution Name -->
+                <div class="flex items-center space-x-3">
+                    <!-- Logo -->
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center border-2 border-brandYellow p-0.5 shadow overflow-hidden">
+                        <img src="https://i.postimg.cc/5y689gRj/d6f360ed-f5e5-4550-b5aa-1df4b3a48cce.png" alt="Sri Venkateswara Institutions Logo" class="w-full h-full object-contain rounded-full">
+                    </div>
+                    <div>
+                        <h1 class="text-xl sm:text-2xl font-extrabold text-brandBlue tracking-tight leading-tight uppercase" id="main-title">
+                            Sri Venkateswara Institutions
+                        </h1>
+                        <p class="text-xs text-brandRed font-bold uppercase tracking-wider" id="sub-title">
+                            Rohini Towers, Brodipet, Guntur
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6 font-semibold text-brandBlue">
+                    <a href="#hero" class="hover:text-brandRed transition-colors" data-translate="nav-home">Home</a>
+                    <a href="#courses" class="hover:text-brandRed transition-colors" data-translate="nav-courses">Courses Offered</a>
+                    <a href="#eligibility" class="hover:text-brandRed transition-colors" data-translate="nav-eligibility">Check Eligibility</a>
+                    <a href="#why-choose-us" class="hover:text-brandRed transition-colors" data-translate="nav-why">Why Us</a>
+                    <a href="#inquiry" class="bg-brandRed text-white px-5 py-2.5 rounded-lg hover:bg-brandBlue transition-all shadow-lg hover:scale-105 duration-200 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span data-translate="nav-apply">Apply Online</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-2">
+                    <button onclick="toggleMobileMenu()" class="text-brandBlue hover:text-brandRed focus:outline-none p-2 rounded-lg bg-gray-100" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="hidden md:hidden bg-brandBlue text-white border-t border-blue-900" id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-2 text-base font-semibold">
+                <a href="#hero" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md hover:bg-brandLightBlue transition-colors" data-translate="nav-home">Home</a>
+                <a href="#courses" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md hover:bg-brandLightBlue transition-colors" data-translate="nav-courses">Courses Offered</a>
+                <a href="#eligibility" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md hover:bg-brandLightBlue transition-colors" data-translate="nav-eligibility">Check Eligibility</a>
+                <a href="#why-choose-us" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md hover:bg-brandLightBlue transition-colors" data-translate="nav-why">Why Us</a>
+                <div class="pt-4 border-t border-blue-800">
+                    <a href="#inquiry" onclick="toggleMobileMenu()" class="block w-full text-center bg-brandYellow text-brandBlue py-3 rounded-lg hover:bg-white transition-colors" data-translate="nav-apply">
+                        Apply Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION with Highlights from Flyer -->
+    <section id="hero" class="relative bg-brandBlue text-white overflow-hidden py-12 lg:py-20 flex-grow">
+        <!-- Floating shapes/background decorative objects -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(25,45,100,0.4),transparent)]"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brandYellow/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-brandRed/10 rounded-full blur-2xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Hero Panel (Course Announcements) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brandRed text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide animate-pulse">
+                        <span class="w-2.5 h-2.5 bg-yellow-300 rounded-full"></span>
+                        <span data-translate="hero-badge">Admissions Open - Academic Year 2026-27</span>
+                    </div>
+
+                    <!-- Direct 10th & Inter Title -->
+                    <div class="space-y-3">
+                        <p class="text-brandYellow text-lg sm:text-xl font-bold tracking-wider" data-translate="hero-breakup">
+                            (5th to 10th Breakup Studies / Failures Pathway)
+                        </p>
+                        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white tracking-tight">
+                            <span data-translate="hero-direct">Direct</span>
+                            <span class="text-brandYellow underline decoration-brandRed decoration-4">10th &amp; Inter</span>
+                            <span data-translate="hero-one-year">in One Year!</span>
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base font-semibold" data-translate="hero-boards">
+                            Recognized National & State Boards: <span class="text-white font-bold bg-brandLightBlue px-2 py-1 rounded">NIOS</span>, <span class="text-white font-bold bg-brandLightBlue px-2 py-1 rounded">APOSS</span>, & Distance Education
+                        </p>
+                    </div>
+
+                    <!-- Groups List -->
+                    <div class="bg-brandLightBlue/70 border border-blue-900 rounded-xl p-5 space-y-3 shadow-xl backdrop-blur-sm">
+                        <p class="text-xs uppercase tracking-widest text-brandYellow font-extrabold" data-translate="hero-groups-title">Available Specializations & Groups</p>
+                        <div class="flex flex-wrap gap-2 text-xs sm:text-sm">
+                            <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">M.P.C.</span>
+                            <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">Bi.P.C.</span>
+                            <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">M.Bi.P.C.</span>
+                            <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">M.E.C.</span>
+                            <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">C.E.C.</span>
+                            <span class="bg-brandBlue text-white px-3 py-1.5 rounded-md border border-yellow-500/30 font-bold">H.E.C.</span>
+                        </div>
+                        <p class="text-xs text-gray-300" data-translate="hero-age-limit">📌 Direct entry available for candidates from age 18 onwards</p>
+                    </div>
+
+                    <!-- Direct Degrees & PG Banner -->
+                    <div class="border-l-4 border-brandYellow pl-4 py-1">
+                        <p class="text-white text-lg font-bold" data-translate="hero-degrees-title">
+                            Direct UG / PG / ITI Courses
+                        </p>
+                        <p class="text-brandYellow text-xl sm:text-2xl font-extrabold tracking-wide">
+                            B.A, B.Com, B.Sc, BBA, ITI, M.A, M.Com, M.Sc, MBA, MCA, B.L.I.Sc
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#inquiry" class="bg-brandYellow hover:bg-white text-brandBlue font-extrabold px-6 py-3.5 rounded-xl shadow-lg transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto text-base">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span data-translate="hero-apply-now">Enroll Now / Free Counseling</span>
+                        </a>
+                        <a href="https://wa.me/918008145999?text=Hi,%20I%20am%20interested%20in%20direct%20admissions%20at%20Sri%20Venkateswara%20Institutions." class="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto text-base">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span data-translate="hero-whatsapp">Chat on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Hero Panel (Hero Badge Graphic & Quick Highlights) -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Elegant Flyer-inspired student placeholder graphic -->
+                    <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl glass-card text-center overflow-hidden">
+
+                        <!-- Mini Hindu Temple/Deity Frame representing Logo Elements -->
+                        <div class="flex justify-center space-x-6 mb-6">
+                            <div class="text-center">
+                                <div class="bg-yellow-400 text-brandBlue p-2 rounded-full inline-block mb-1">
+                                    <svg viewBox="0 0 100 100" class="w-8 h-8 fill-current">
+                                        <!-- Lord Ganesha Simple Silhouette -->
+                                        <circle cx="50" cy="30" r="15" />
+                                        <path d="M50,45 C40,45 35,55 35,70 C35,80 45,85 50,85 C55,85 65,80 65,70 C65,55 60,45 50,45 Z" />
+                                        <path d="M50,55 L60,65 L50,75 Z" />
+                                    </svg>
+                                </div>
+                                <span class="block text-[10px] text-yellow-300 font-bold uppercase tracking-widest">Ganesha</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-yellow-400 text-brandBlue p-2 rounded-full inline-block mb-1">
+                                    <svg viewBox="0 0 100 100" class="w-8 h-8 fill-current">
+                                        <!-- Balaji Silhouette -->
+                                        <rect x="45" y="15" width="10" height="70" />
+                                        <path d="M30,30 L70,30 L50,15 Z" />
+                                        <circle cx="30" cy="50" r="8" />
+                                        <circle cx="70" cy="50" r="8" />
+                                    </svg>
+                                </div>
+                                <span class="block text-[10px] text-yellow-300 font-bold uppercase tracking-widest">Lord Venkateswara</span>
+                            </div>
+                        </div>
+
+                        <!-- Main Graphic Badge: 100% Pass Guarantee -->
+                        <div class="relative inline-block w-48 h-48 mx-auto mb-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+                            <!-- Golden Ribbon Outer Seal -->
+                            <div class="absolute inset-0 rounded-full border-8 border-dashed border-yellow-300 animate-[spin_60s_linear_infinite] opacity-65"></div>
+                            <div class="absolute inset-2 bg-brandYellow rounded-full shadow-inner flex flex-col items-center justify-center text-brandBlue p-4 border-4 border-double border-white">
+                                <span class="text-xs font-extrabold uppercase tracking-widest" data-translate="badge-pass-lbl">Guaranteed</span>
+                                <span class="text-4xl font-black tracking-tighter text-brandRed leading-none">100%</span>
+                                <span class="text-lg font-extrabold tracking-tight" data-translate="badge-pass-val">PASS</span>
+                                <span class="text-[10px] uppercase tracking-wide font-bold" data-translate="badge-pass-sub">Assistance</span>
+                            </div>
+                        </div>
+
+                        <!-- Fast Admission Info Checklist -->
+                        <div class="space-y-3.5 text-left bg-brandBlue/50 p-4 rounded-xl border border-blue-900">
+                            <h3 class="text-brandYellow font-extrabold text-sm border-b border-blue-900 pb-2 flex items-center justify-between">
+                                <span data-translate="why-choose-header">KEY HIGHLIGHTS</span>
+                                <i class="fa-solid fa-circle-info"></i>
+                            </h3>
+                            <div class="grid grid-cols-2 gap-3 text-xs">
+                                <div class="flex items-center space-x-2 text-gray-200">
+                                    <i class="fa-solid fa-check-circle text-brandYellow"></i>
+                                    <span data-translate="highlight-1">Experienced Faculty</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-200">
+                                    <i class="fa-solid fa-check-circle text-brandYellow"></i>
+                                    <span data-translate="highlight-2">Easy Admissions</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-200">
+                                    <i class="fa-solid fa-check-circle text-brandYellow"></i>
+                                    <span data-translate="highlight-3">Recognized Degrees</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-200">
+                                    <i class="fa-solid fa-check-circle text-brandYellow"></i>
+                                    <span data-translate="highlight-4">Reasonable Fee</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Urgency Alert -->
+                        <div class="mt-4 bg-brandRed/20 border border-brandRed/40 text-brandYellow text-xs p-2 rounded-lg font-bold" data-translate="hero-urgency">
+                            ⚠️ Limited seats available for Direct One-Year Exams! Apply today.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY STATS STRIP -->
+    <section class="bg-brandYellow py-6 text-brandBlue shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-brandBlue/20">
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl sm:text-4xl font-black tracking-tight" id="stat-1">100%</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider" data-translate="stat-pass">Pass Success rate</p>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl sm:text-4xl font-black tracking-tight" id="stat-2">15+</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider" data-translate="stat-exp">Years of Excellence</p>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl sm:text-4xl font-black tracking-tight" id="stat-3">5,000+</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider" data-translate="stat-alumni">Graduated Students</p>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <p class="text-3xl sm:text-4xl font-black tracking-tight" id="stat-4">1-on-1</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider" data-translate="stat-support">Dedicated Tutoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE COURSE CATALOGUE SECTION -->
+    <section id="courses" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-brandBlue tracking-tight sm:text-4xl" data-translate="courses-title">
+                    Our Diverse Academic Streams
+                </h2>
+                <p class="mt-3 text-lg text-gray-500" data-translate="courses-subtitle">
+                    Select a category below to explore the detailed specializations and groups we offer for direct educational progression.
+                </p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
+                <button onclick="filterCourses('all')" id="tab-all" class="course-tab-btn active px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md bg-brandBlue text-white border border-brandBlue">
+                    <span data-translate="tab-all">All Programs</span>
+                </button>
+                <button onclick="filterCourses('school')" id="tab-school" class="course-tab-btn px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <span data-translate="tab-school">10th Class</span>
+                </button>
+                <button onclick="filterCourses('inter')" id="tab-inter" class="course-tab-btn px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <span data-translate="tab-inter">Intermediate</span>
+                </button>
+                <button onclick="filterCourses('ug')" id="tab-ug" class="course-tab-btn px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <span data-translate="tab-ug">Undergraduate (UG)</span>
+                </button>
+                <button onclick="filterCourses('pg')" id="tab-pg" class="course-tab-btn px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <span data-translate="tab-pg">Postgraduate (PG)</span>
+                </button>
+            </div>
+
+            <!-- Course Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="courses-grid">
+
+                <!-- 10th Card -->
+                <div class="course-card border-t-4 border-brandRed bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between" data-category="school">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-red-50 text-brandRed font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider" data-translate="badge-school">Schooling</span>
+                            <span class="text-xs text-gray-400 font-semibold" data-translate="card-duration">1 Year Program</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brandBlue mb-2" data-translate="card-10th-title">Direct 10th Standard</h3>
+                        <p class="text-gray-500 text-sm mb-4" data-translate="card-10th-desc">Designed explicitly for student break-ups, working individuals, or failure recovery paths via recognized boards.</p>
+                        <ul class="space-y-2.5 text-xs text-gray-600 mb-6 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="10th-f-1">NIOS / APOSS Board Syllabus</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="10th-f-2">Eligible for higher studies/govt jobs</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="10th-f-3">Continuous study guide & materials provided</span></li>
+                        </ul>
+                    </div>
+                    <a href="#inquiry" onclick="selectCourseForInquiry('Direct 10th')" class="w-full text-center bg-brandBlue text-white py-3 rounded-xl hover:bg-brandRed font-bold text-sm tracking-wide block transition-colors mt-auto">
+                        <span data-translate="btn-inquiry">Inquire For Program</span>
+                    </a>
+                </div>
+
+                <!-- Intermediate Card -->
+                <div class="course-card border-t-4 border-brandYellow bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between" data-category="inter">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-yellow-50 text-brandDarkYellow font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider" data-translate="badge-inter">Higher Secondary</span>
+                            <span class="text-xs text-gray-400 font-semibold" data-translate="card-duration">1 Year Program</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brandBlue mb-2" data-translate="card-inter-title">Direct Intermediate</h3>
+                        <p class="text-gray-500 text-sm mb-4" data-translate="card-inter-desc">Enroll in the stream that fits your career aspirations. Open to science, commerce, and arts aspirants.</p>
+
+                        <div class="mb-4 bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs font-bold text-brandBlue uppercase mb-1.5" data-translate="groups-label">Available Options:</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">M.P.C</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">Bi.P.C</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">M.Bi.P.C</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">M.E.C</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">C.E.C</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">H.E.C</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-gray-600 mb-6 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="inter-f-1">Direct single-year certification path</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="inter-f-2">Acceptable for EAPCET, NEET, and IIT JEE</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="inter-f-3">Regular & weekends guidance support</span></li>
+                        </ul>
+                    </div>
+                    <a href="#inquiry" onclick="selectCourseForInquiry('Direct Intermediate')" class="w-full text-center bg-brandBlue text-white py-3 rounded-xl hover:bg-brandRed font-bold text-sm tracking-wide block transition-colors mt-auto">
+                        <span data-translate="btn-inquiry">Inquire For Program</span>
+                    </a>
+                </div>
+
+                <!-- Degree Card (UG) -->
+                <div class="course-card border-t-4 border-blue-500 bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between" data-category="ug">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-50 text-blue-600 font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider" data-translate="badge-ug">Undergraduate</span>
+                            <span class="text-xs text-gray-400 font-semibold" data-translate="badge-distance">Distance Mode</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brandBlue mb-2" data-translate="card-ug-title">Direct Undergrad Degrees (UG)</h3>
+                        <p class="text-gray-500 text-sm mb-4" data-translate="card-ug-desc">Advance your professional journey with our widely-recognized Bachelor's degree streams.</p>
+
+                        <div class="mb-4 bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs font-bold text-brandBlue uppercase mb-1.5" data-translate="groups-label">Specializations:</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">B.A</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">B.COM</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">BSC</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">BBA</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">ITI (All Groups)</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-gray-600 mb-6 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="ug-f-1">Learn from home while working</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="ug-f-2">UGC Recognized University Certifications</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="ug-f-3">Complete study materials and guides</span></li>
+                        </ul>
+                    </div>
+                    <a href="#inquiry" onclick="selectCourseForInquiry('Direct Degree / UG')" class="w-full text-center bg-brandBlue text-white py-3 rounded-xl hover:bg-brandRed font-bold text-sm tracking-wide block transition-colors mt-auto">
+                        <span data-translate="btn-inquiry">Inquire For Program</span>
+                    </a>
+                </div>
+
+                <!-- Postgrad Card (PG) -->
+                <div class="course-card border-t-4 border-indigo-600 bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between" data-category="pg">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-indigo-50 text-indigo-600 font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider" data-translate="badge-pg">Postgraduate</span>
+                            <span class="text-xs text-gray-400 font-semibold" data-translate="badge-distance">Distance Mode</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brandBlue mb-2" data-translate="card-pg-title">Postgraduate Programs (PG)</h3>
+                        <p class="text-gray-500 text-sm mb-4" data-translate="card-pg-desc">Enhance your resume and acquire niche expert knowledge with our versatile PG portfolio.</p>
+
+                        <div class="mb-4 bg-gray-50 p-3 rounded-lg">
+                            <p class="text-xs font-bold text-brandBlue uppercase mb-1.5" data-translate="groups-label">Specializations:</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">M.A</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">M.COM</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">MSC</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">MBA</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">MCA</span>
+                                <span class="bg-white px-2 py-0.5 rounded border border-gray-200 text-xs font-semibold text-brandBlue">B.L.I.Sc</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs text-gray-600 mb-6 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="pg-f-1">Flexible semester/yearly exam plans</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="pg-f-2">Highly relevant for career promotions & teaching</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> <span data-translate="pg-f-3">Simple virtual counseling process</span></li>
+                        </ul>
+                    </div>
+                    <a href="#inquiry" onclick="selectCourseForInquiry('Postgraduate / PG')" class="w-full text-center bg-brandBlue text-white py-3 rounded-xl hover:bg-brandRed font-bold text-sm tracking-wide block transition-colors mt-auto">
+                        <span data-translate="btn-inquiry">Inquire For Program</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ELIGIBILITY CALCULATOR -->
+    <section id="eligibility" class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+                <div class="bg-brandBlue text-white p-6 sm:p-8 text-center relative">
+                    <div class="absolute top-2 right-4 text-brandYellow text-2xl opacity-40">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold" data-translate="calc-title">Interactive Admission Eligibility Checker</h2>
+                    <p class="text-gray-300 text-xs sm:text-sm mt-2" data-translate="calc-subtitle">Find out if you can register for direct examinations in under 1 minute!</p>
+                </div>
+
+                <div class="p-6 sm:p-8 space-y-6">
+                    <!-- Step 1: Select Current Level -->
+                    <div>
+                        <label class="block text-sm font-bold text-brandBlue mb-2 flex items-center gap-2">
+                            <span class="bg-brandYellow text-brandBlue px-2 py-0.5 rounded-full text-xs font-black">1</span>
+                            <span data-translate="calc-q1">What is your current highest education level?</span>
+                        </label>
+                        <select id="user-current-education" onchange="calculateEligibility()" class="w-full p-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium">
+                            <option value="" data-translate="calc-opt-select">-- Select Current Education --</option>
+                            <option value="below-5th" data-translate="calc-opt-1">Below 5th Class</option>
+                            <option value="5th-9th-fail" data-translate="calc-opt-2">5th - 9th Class (Discontinued / Fail)</option>
+                            <option value="10th-fail" data-translate="calc-opt-3">10th Class (Discontinued / Fail)</option>
+                            <option value="10th-pass" data-translate="calc-opt-4">10th Class Pass</option>
+                            <option value="inter-fail" data-translate="calc-opt-5">Intermediate (Discontinued / Fail)</option>
+                            <option value="inter-pass" data-translate="calc-opt-6">Intermediate Pass (Undergrad Aspirant)</option>
+                            <option value="degree-pass" data-translate="calc-opt-7">Degree Pass (PG Aspirant)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Age Verification -->
+                    <div>
+                        <label class="block text-sm font-bold text-brandBlue mb-2 flex items-center gap-2">
+                            <span class="bg-brandYellow text-brandBlue px-2 py-0.5 rounded-full text-xs font-black">2</span>
+                            <span data-translate="calc-q2">What is your age currently?</span>
+                        </label>
+                        <div class="flex items-center gap-4">
+                            <input type="number" id="user-age" min="10" max="80" placeholder="e.g. 18" oninput="calculateEligibility()" class="w-full p-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium">
+                            <span class="text-sm font-semibold text-gray-500" data-translate="calc-years">Years</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Result Box -->
+                    <div id="eligibility-result" class="hidden rounded-2xl p-5 border-2 transition-all duration-300">
+                        <!-- Content injected via JS -->
+                    </div>
+
+                    <!-- Clear / Help Call -->
+                    <div class="text-center text-xs text-gray-400" data-translate="calc-note">
+                        *Eligibility is computed based on board guidelines of NIOS, APOSS & recognized state/central universities.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US (Flyer Benefits Visualized) -->
+    <section id="why-choose-us" class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-brandRed font-extrabold" data-translate="why-pretitle">YOUR GOLDEN FUTURE STARTING TODAY</span>
+                <h2 class="text-3xl font-extrabold text-brandBlue sm:text-4xl mt-2" data-translate="why-title">
+                    A Golden Opportunity for Your Future!
+                </h2>
+                <p class="mt-4 text-lg text-gray-500" data-translate="why-subtitle">
+                    Why hundreds of students choose Sri Venkateswara Institutions, Guntur, to restart their careers.
+                </p>
+            </div>
+
+            <!-- 5 Core Flyer Benefits with elegant graphics -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+                <!-- Benefit 1: Study while working -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-brandBlue rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-base font-extrabold text-brandBlue mb-2" data-translate="b1-title">Study While Working</h3>
+                        <p class="text-xs text-gray-500" data-translate="b1-desc">Flexible self-study models custom fit for busy working schedules without compromising your salary.</p>
+                    </div>
+                    <span class="block text-xs font-semibold text-brandRed mt-4" data-translate="b1-sub">Flexible Schedule</span>
+                </div>
+
+                <!-- Benefit 2: Recognized Certificates -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-red-100 text-brandRed rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 class="text-base font-extrabold text-brandBlue mb-2" data-translate="b2-title">Government Recognized</h3>
+                        <p class="text-xs text-gray-500" data-translate="b2-desc">100% genuine certifications from valid government boards: NIOS, APOSS & recognized Universities.</p>
+                    </div>
+                    <span class="block text-xs font-semibold text-brandRed mt-4" data-translate="b2-sub">Recognized Certificates</span>
+                </div>
+
+                <!-- Benefit 3: Study from Home -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-yellow-100 text-brandDarkYellow rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-base font-extrabold text-brandBlue mb-2" data-translate="b3-title">Comfort of Home</h3>
+                        <p class="text-xs text-gray-500" data-translate="b3-desc">No mandatory physical college presence. Access resources easily online or through regular books.</p>
+                    </div>
+                    <span class="block text-xs font-semibold text-brandRed mt-4" data-translate="b3-sub">Study from Home</span>
+                </div>
+
+                <!-- Benefit 4: Career & Job Guidance -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-base font-extrabold text-brandBlue mb-2" data-translate="b4-title">Job Pathway</h3>
+                        <p class="text-xs text-gray-500" data-translate="b4-desc">A powerful step forward to unlock high-paying corporate roles, promotions & government jobs.</p>
+                    </div>
+                    <span class="block text-xs font-semibold text-brandRed mt-4" data-translate="b4-sub">Pathway to Job Opportunities</span>
+                </div>
+
+                <!-- Benefit 5: Open for Everyone -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="text-base font-extrabold text-brandBlue mb-2" data-translate="b5-title">Universal Access</h3>
+                        <p class="text-xs text-gray-500" data-translate="b5-desc">Tailored syllabus support for students, veterans, housewives, and employed executives.</p>
+                    </div>
+                    <span class="block text-xs font-semibold text-brandRed mt-4" data-translate="b5-sub">Accessible to Everyone</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY FORM SECTION (Simulated cloud storage / offline lead capture) -->
+    <section id="inquiry" class="py-16 bg-brandBlue text-white relative">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(217,30,24,0.15),transparent)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Details -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="bg-brandRed text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider" data-translate="form-tag">Interactive Counselor Panel</span>
+                    <h2 class="text-3xl font-extrabold text-white" data-translate="form-title">Secure Your Callback Session Today!</h2>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed" data-translate="form-desc">
+                        Our career advisors at Rohini Towers, Guntur will evaluate your educational background and suggest the perfect, fastest route to certified graduation or school clearance.
+                    </p>
+
+                    <!-- Real-time Mock Active Application Counter -->
+                    <div class="bg-brandLightBlue/50 border border-blue-900 rounded-2xl p-5 space-y-3 shadow-md">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-gray-400" data-translate="counter-active">Active admissions checked today:</span>
+                            <span class="bg-brandYellow text-brandBlue font-bold px-2 py-0.5 rounded-full" id="live-visitor-count">48 Applicants Active</span>
+                        </div>
+                        <!-- Simulated Progress Bar -->
+                        <div class="w-full bg-brandBlue h-2.5 rounded-full overflow-hidden">
+                            <div class="bg-brandYellow h-full rounded-full transition-all duration-1000" style="width: 82%;"></div>
+                        </div>
+                        <p class="text-[11px] text-yellow-300/80 font-semibold" data-translate="counter-sub">🔥 92% of seats are currently occupied. Complete registration to hold your slot.</p>
+                    </div>
+
+                    <!-- Quick Contacts Details in Card -->
+                    <div class="space-y-3 text-sm">
+                        <p class="font-bold text-brandYellow text-xs uppercase tracking-widest" data-translate="contact-direct">Or Reach Out Instantly:</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <a href="tel:8008145999" class="bg-brandLightBlue/50 p-3 rounded-lg flex items-center gap-3 border border-blue-900 hover:bg-brandLightBlue hover:border-brandYellow transition-all">
+                                <i class="fa-solid fa-phone text-brandYellow"></i>
+                                <div>
+                                    <span class="block text-[10px] text-gray-400">Counselor Line 1</span>
+                                    <span class="font-bold text-sm">8008145999</span>
+                                </div>
+                            </a>
+                            <a href="tel:9849937266" class="bg-brandLightBlue/50 p-3 rounded-lg flex items-center gap-3 border border-blue-900 hover:bg-brandLightBlue hover:border-brandYellow transition-all">
+                                <i class="fa-solid fa-phone text-brandYellow"></i>
+                                <div>
+                                    <span class="block text-[10px] text-gray-400">Counselor Line 2</span>
+                                    <span class="font-bold text-sm">9849937266</span>
+                                </div>
+                            </a>
+                            <a href="tel:8978234555" class="bg-brandLightBlue/50 p-3 rounded-lg flex items-center gap-3 border border-blue-900 hover:bg-brandLightBlue hover:border-brandYellow transition-all">
+                                <i class="fa-solid fa-phone text-brandYellow"></i>
+                                <div>
+                                    <span class="block text-[10px] text-gray-400">Counselor Line 3</span>
+                                    <span class="font-bold text-sm">8978234555</span>
+                                </div>
+                            </a>
+                            <a href="tel:8555825538" class="bg-brandLightBlue/50 p-3 rounded-lg flex items-center gap-3 border border-blue-900 hover:bg-brandLightBlue hover:border-brandYellow transition-all">
+                                <i class="fa-solid fa-phone text-brandYellow"></i>
+                                <div>
+                                    <span class="block text-[10px] text-gray-400">Counselor Line 4</span>
+                                    <span class="font-bold text-sm">8555825538</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Inquiry Form Container -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white text-gray-800 rounded-3xl shadow-2xl p-6 sm:p-8 border border-gray-100">
+                        <h3 class="text-xl font-bold text-brandBlue mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope-open-text text-brandRed"></i>
+                            <span data-translate="form-box-title">Free Consultation Form</span>
+                        </h3>
+
+                        <form id="admission-inquiry-form" onsubmit="submitForm(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Student Name -->
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5" data-translate="lbl-name">Full Name *</label>
+                                    <input type="text" id="form-name" required placeholder="Enter student's full name" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium">
+                                </div>
+
+                                <!-- Mobile Number -->
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5" data-translate="lbl-phone">Mobile Number *</label>
+                                    <input type="tel" id="form-phone" required pattern="[0-9]{10}" placeholder="10 Digit Phone Number" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Target Course Selection -->
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5" data-translate="lbl-course">Target Program *</label>
+                                    <select id="form-course" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium">
+                                        <option value="" data-translate="lbl-course-select">-- Select Preferred Program --</option>
+                                        <option value="Direct 10th">Direct 10th Standard</option>
+                                        <option value="Direct Intermediate">Direct Intermediate (MPC / BiPC etc.)</option>
+                                        <option value="Direct Degree / UG">Direct Undergrad Degree (BA, B.Com, B.Sc)</option>
+                                        <option value="Postgraduate / PG">Postgraduate (MA, M.Com, MBA, MCA)</option>
+                                        <option value="ITI Courses">ITI Course Streams</option>
+                                    </select>
+                                </div>
+
+                                <!-- Location City -->
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5" data-translate="lbl-city">Current Location *</label>
+                                    <input type="text" id="form-city" required placeholder="e.g. Guntur / Vijayawada" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium">
+                                </div>
+                            </div>
+
+                            <!-- Text Message area -->
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5" data-translate="lbl-msg">Any additional comments or previous fail details</label>
+                                <textarea id="form-msg" rows="3" placeholder="Tell us if you failed 9th / 10th / Inter or have gap years..." class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brandBlue focus:outline-none text-sm font-medium"></textarea>
+                            </div>
+
+                            <!-- Custom Alert Notification container (No alerts!) -->
+                            <div id="form-notification" class="hidden rounded-xl p-4 text-sm font-bold transition-all duration-300"></div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full bg-brandRed hover:bg-brandBlue text-white font-extrabold py-4 rounded-xl transition-all shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span data-translate="btn-submit">Submit Inquiry Now</span>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-brandBlue sm:text-4xl" data-translate="faq-title">Frequently Asked Questions (FAQ)</h2>
+                <p class="text-gray-500 mt-2 text-sm sm:text-base" data-translate="faq-subtitle">Clear your common queries about one-year courses & distance learning options.</p>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion-box">
+                <!-- Q1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition-colors text-left font-bold text-brandBlue">
+                        <span data-translate="q1">Is the 10th and Inter Certificate valid for Government Job applications?</span>
+                        <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden p-5 border-t border-gray-100 text-sm text-gray-600 leading-relaxed bg-white">
+                        <span data-translate="a1">Yes. The certificates issued by NIOS and APOSS (Andhra Pradesh Open School Society) are highly recognized by both Central & State Governments, standard universities, and private organizations for placements as well as higher studies exams like JEE or NEET.</span>
+                    </div>
+                </div>
+                <!-- Q2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition-colors text-left font-bold text-brandBlue">
+                        <span data-translate="q2">Can I complete both 10th and Intermediate simultaneously?</span>
+                        <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div id="faq-ans-2" class="hidden p-5 border-t border-gray-100 text-sm text-gray-600 leading-relaxed bg-white">
+                        <span data-translate="a2">You cannot do both together. However, you can complete 10th Class in one year directly if you had a school break, and upon passing, you can enroll for the direct Intermediate program. Both can be fast-tracked systematically according to Open School bylaws.</span>
+                    </div>
+                </div>
+                <!-- Q3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition-colors text-left font-bold text-brandBlue">
+                        <span data-translate="q3">What are the eligibility guidelines regarding age criteria?</span>
+                        <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div id="faq-ans-3" class="hidden p-5 border-t border-gray-100 text-sm text-gray-600 leading-relaxed bg-white">
+                        <span data-translate="a3">For direct admissions in the open school model, candidates aged 18 and onwards are highly encouraged. Our counselor team in Guntur can verify your certificates and guide you seamlessly.</span>
+                    </div>
+                </div>
+                <!-- Q4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition-colors text-left font-bold text-brandBlue">
+                        <span data-translate="q4">Do I have to attend classes physically daily?</span>
+                        <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300" id="faq-icon-4"></i>
+                    </button>
+                    <div id="faq-ans-4" class="hidden p-5 border-t border-gray-100 text-sm text-gray-600 leading-relaxed bg-white">
+                        <span data-translate="a4">No daily physical attendance is necessary! We provide complete distance study guides, model test papers, and periodic weekend guidelines so that you can study comfortably from your house while keeping up with your full-time jobs.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE MAPS / LOCATION PREVIEW -->
+    <section class="py-12 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-brandBlue flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-brandRed"></i>
+                        <span data-translate="loc-title">Visit Our Campus in Guntur</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed" data-translate="loc-desc">
+                        Our main administrative and educational counseling hub is located right in the heart of Guntur city. Easy connectivity by both railway station and local bus stand. Feel free to bring your certificates for instant direct spot registration evaluations!
+                    </p>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 space-y-2">
+                        <p class="text-sm font-bold text-brandBlue flex items-center gap-2">
+                            <i class="fa-solid fa-building-circle-arrow-right text-brandYellow"></i>
+                            <span>Sri Venkateswara Institutions</span>
+                        </p>
+                        <p class="text-xs text-gray-500 pl-6 leading-relaxed" data-translate="loc-addr-details">
+                            Rohini Towers, 2nd Line 11th Cross Road,<br> Brodipet, Guntur, Andhra Pradesh - 522002.
+                        </p>
+                    </div>
+                </div>
+                <!-- Interactive Map Mockup representing Guntur -->
+                <div class="h-80 bg-gray-300 rounded-3xl overflow-hidden shadow-lg border-4 border-white relative group">
+                    <!-- Simple Mock Map SVG for Guntur Brodipet with clean pin representation -->
+                    <div class="absolute inset-0 bg-blue-50/50">
+                        <svg class="w-full h-full text-gray-400 opacity-60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <line x1="0" y1="20" x2="100" y2="20" stroke="#cccccc" stroke-width="2" />
+                            <line x1="0" y1="50" x2="100" y2="50" stroke="#cccccc" stroke-width="2" />
+                            <line x1="0" y1="80" x2="100" y2="80" stroke="#cccccc" stroke-width="2" />
+                            <line x1="30" y1="0" x2="30" y2="100" stroke="#cccccc" stroke-width="2" />
+                            <line x1="70" y1="0" x2="70" y2="100" stroke="#cccccc" stroke-width="2" />
+                            <!-- Famous Brodipet Cross Lines -->
+                            <path d="M 30,50 L 70,80" stroke="#e0e0e0" stroke-width="4" />
+                            <path d="M 0,0 L 100,100" stroke="#f0f0f0" stroke-width="1" />
+                        </svg>
+                    </div>
+                    <!-- Custom styled map label pin -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+                        <div class="bg-brandRed text-white p-3 rounded-2xl shadow-2xl flex items-center gap-2 relative">
+                            <i class="fa-solid fa-location-pin text-xl text-yellow-300 animate-bounce"></i>
+                            <div>
+                                <p class="text-xs font-black">Rohini Towers</p>
+                                <p class="text-[9px] text-yellow-200">Brodipet 2/11, Guntur</p>
+                            </div>
+                            <div class="absolute w-3 h-3 bg-brandRed rotate-45 -bottom-1.5 left-1/2 transform -translate-x-1/2"></div>
+                        </div>
+                    </div>
+                    <!-- CTA Layer to view/redirect -->
+                    <div class="absolute inset-0 bg-brandBlue/20 hover:bg-brandBlue/0 transition-all duration-300 flex items-end p-4 justify-center">
+                        <a href="https://maps.app.goo.gl/pADFqwWiSffgVHbo6" target="_blank" class="bg-white hover:bg-brandYellow text-brandBlue font-bold text-xs px-4 py-2 rounded-full shadow flex items-center gap-2 transition-all">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span data-translate="map-redirect">Open in Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH QUICK CONVERSATIONAL NOTE -->
+    <footer class="bg-brandBlue text-gray-300 pt-16 pb-24 border-t-8 border-brandYellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+                <!-- Quick Brand Column -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-lg font-bold text-brandYellow">Sri Venkateswara Institutions</h4>
+                    <p class="text-xs leading-relaxed text-gray-400" data-translate="footer-brand-desc">
+                        Providing flexible, government-recognized path solutions since 2011. Bridging school-break dropouts, working adults, and failures to successful accredited graduation streams.
+                    </p>
+                    <div class="flex space-x-3 text-lg">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Academic Portfolios -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider text-brandYellow" data-translate="footer-heading-streams">Our Key Portfolios</h4>
+                    <ul class="space-y-2 text-xs font-semibold">
+                        <li><a href="#courses" class="hover:text-white transition-colors">Direct 10th (NIOS/APOSS)</a></li>
+                        <li><a href="#courses" class="hover:text-white transition-colors">Direct Intermediate (MPC/BiPC)</a></li>
+                        <li><a href="#courses" class="hover:text-white transition-colors">Direct Undergrad (BA, B.Com, BSc, BBA)</a></li>
+                        <li><a href="#courses" class="hover:text-white transition-colors">Postgraduate (MA, MSc, MBA, MCA)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Fast Links -->
+                <div class="space-y-4">
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider text-brandYellow" data-translate="footer-heading-quick">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs font-semibold">
+                        <li><a href="#hero" class="hover:text-white transition-colors">Home Portal</a></li>
+                        <li><a href="#eligibility" class="hover:text-white transition-colors">Eligibility Calculator</a></li>
+                        <li><a href="#why-choose-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#inquiry" class="hover:text-white transition-colors">Book Free Counsel Slot</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct Address and Contact Detail -->
+                <div class="space-y-4 text-xs">
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider text-brandYellow" data-translate="footer-heading-contact">Admissions Office</h4>
+                    <p class="leading-relaxed text-gray-400">
+                        📍 Rohini Towers, Brodipet 2/11, Guntur, AP, India.
+                    </p>
+                    <p class="font-bold flex items-center gap-2 text-white">
+                        <i class="fa-solid fa-phone text-brandYellow"></i>
+                        <span>8008145999, 9849937266</span>
+                    </p>
+                    <p class="font-bold flex items-center gap-2 text-white">
+                        <i class="fa-solid fa-phone text-brandYellow"></i>
+                        <span>8978234555, 8555825538</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Credits -->
+            <div class="border-t border-blue-950 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Sri Venkateswara Institutions, Guntur. All Rights Reserved.</p>
+                <p data-translate="footer-last-line">Join today... Step towards success!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE DIRECT CALL STICKY BUTTON BAR -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-brandYellow shadow-lg flex md:hidden h-16">
+        <a href="tel:8008145999" class="flex-1 flex flex-col justify-center items-center text-brandBlue font-extrabold hover:bg-gray-50 border-r border-gray-100">
+            <i class="fa-solid fa-phone text-xl text-brandRed animate-bounce"></i>
+            <span class="text-[10px] mt-1" data-translate="sticky-call">Call Center</span>
+        </a>
+        <a href="#inquiry" class="flex-1 bg-brandRed text-white font-extrabold flex flex-col justify-center items-center hover:bg-brandBlue">
+            <i class="fa-solid fa-file-signature text-xl text-brandYellow"></i>
+            <span class="text-[10px] mt-1" data-translate="sticky-apply">Register Now</span>
+        </a>
+        <a href="https://wa.me/918008145999" class="flex-1 flex flex-col justify-center items-center text-brandBlue font-extrabold hover:bg-gray-50 border-l border-gray-100">
+            <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
+            <span class="text-[10px] mt-1" data-translate="sticky-whatsapp">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- MAIN JAVASCRIPT STATE CONTROLLER -->
+    <script>
+        // Language state management - now English by default
+        let currentLanguage = 'en';
+
+        const TRANSLATIONS = {
+            'en': {
+                'top-address': 'Rohini Towers, Brodipet 2/11, Guntur',
+                'nav-home': 'Home',
+                'nav-courses': 'Courses Offered',
+                'nav-eligibility': 'Check Eligibility',
+                'nav-why': 'Why Us',
+                'nav-apply': 'Apply Online',
+                'hero-badge': 'Admissions Open - Academic Year 2026-27',
+                'hero-breakup': '(5th to 10th Breakup Studies / Failures Pathway)',
+                'hero-direct': 'Direct',
+                'hero-one-year': 'in One Year!',
+                'hero-boards': 'Recognized National & State Boards: NIOS, APOSS, & Distance Education',
+                'hero-groups-title': 'Available Specializations & Groups',
+                'hero-age-limit': '📌 Direct entry available for candidates from age 18 onwards',
+                'hero-degrees-title': 'Direct UG / PG / ITI Courses',
+                'hero-apply-now': 'Enroll Now / Free Counseling',
+                'hero-whatsapp': 'Chat on WhatsApp',
+                'badge-pass-lbl': 'Guaranteed',
+                'badge-pass-val': 'PASS',
+                'badge-pass-sub': 'Assistance',
+                'why-choose-header': 'KEY HIGHLIGHTS',
+                'highlight-1': 'Experienced Faculty',
+                'highlight-2': 'Easy Admissions',
+                'highlight-3': 'Recognized Degrees',
+                'highlight-4': 'Reasonable Fee',
+                'hero-urgency': '⚠️ Limited seats available for Direct One-Year Exams! Apply today.',
+                'stat-pass': 'Pass Success rate',
+                'stat-exp': 'Years of Excellence',
+                'stat-alumni': 'Graduated Students',
+                'stat-support': 'Dedicated Tutoring',
+                'courses-title': 'Our Diverse Academic Streams',
+                'courses-subtitle': 'Select a category below to explore the detailed specializations and groups we offer for direct educational progression.',
+                'tab-all': 'All Programs',
+                'tab-school': '10th Class',
+                'tab-inter': 'Intermediate',
+                'tab-ug': 'Undergraduate (UG)',
+                'tab-pg': 'Postgraduate (PG)',
+                'badge-school': 'Schooling',
+                'card-duration': '1 Year Program',
+                'card-10th-title': 'Direct 10th Standard',
+                'card-10th-desc': 'Designed explicitly for student break-ups, working individuals, or failure recovery paths via recognized boards.',
+                '10th-f-1': 'NIOS / APOSS Board Syllabus',
+                '10th-f-2': 'Eligible for higher studies/govt jobs',
+                '10th-f-3': 'Continuous study guide & materials provided',
+                'btn-inquiry': 'Inquire For Program',
+                'badge-inter': 'Higher Secondary',
+                'card-inter-title': 'Direct Intermediate',
+                'card-inter-desc': 'Enroll in the stream that fits your career aspirations. Open to science, commerce, and arts aspirants.',
+                'groups-label': 'Available Options:',
+                'inter-f-1': 'Direct single-year certification path',
+                'inter-f-2': 'Acceptable for EAPCET, NEET, and IIT JEE',
+                'inter-f-3': 'Regular & weekends guidance support',
+                'badge-ug': 'Undergraduate',
+                'badge-distance': 'Distance Mode',
+                'card-ug-title': 'Direct Undergrad Degrees (UG)',
+                'card-ug-desc': 'Advance your professional journey with our widely-recognized Bachelor\'s degree streams.',
+                'ug-f-1': 'Learn from home while working',
+                'ug-f-2': 'UGC Recognized University Certifications',
+                'ug-f-3': 'Complete study materials and guides',
+                'badge-pg': 'Postgraduate',
+                'card-pg-title': 'Postgraduate Programs (PG)',
+                'card-pg-desc': 'Enhance your resume and acquire niche expert knowledge with our versatile PG portfolio.',
+                'pg-f-1': 'Flexible semester/yearly exam plans',
+                'pg-f-2': 'Highly relevant for career promotions & teaching',
+                'pg-f-3': 'Simple virtual counseling process',
+                'calc-title': 'Interactive Admission Eligibility Checker',
+                'calc-subtitle': 'Find out if you can register for direct examinations in under 1 minute!',
+                'calc-q1': 'What is your current highest education level?',
+                'calc-q2': 'What is your age currently?',
+                'calc-years': 'Years',
+                'calc-note': '*Eligibility is computed based on board guidelines of NIOS, APOSS & recognized state/central universities.',
+                'calc-opt-select': '-- Select Current Education --',
+                'calc-opt-1': 'Below 5th Class',
+                'calc-opt-2': '5th - 9th Class (Discontinued / Fail)',
+                'calc-opt-3': '10th Class (Discontinued / Fail)',
+                'calc-opt-4': '10th Class Pass',
+                'calc-opt-5': 'Intermediate (Discontinued / Fail)',
+                'calc-opt-6': 'Intermediate Pass (Undergrad Aspirant)',
+                'calc-opt-7': 'Degree Pass (PG Aspirant)',
+                'why-pretitle': 'YOUR GOLDEN FUTURE STARTING TODAY',
+                'why-title': 'A Golden Opportunity for Your Future!',
+                'why-subtitle': 'Why hundreds of students choose Sri Venkateswara Institutions, Guntur, to restart their careers.',
+                'b1-title': 'Study While Working',
+                'b1-desc': 'Flexible self-study models custom fit for busy working schedules without compromising your salary.',
+                'b1-sub': 'Flexible Schedule',
+                'b2-title': 'Government Recognized',
+                'b2-desc': '100% genuine certifications from valid government boards: NIOS, APOSS & recognized Universities.',
+                'b2-sub': 'Recognized Certificates',
+                'b3-title': 'Comfort of Home',
+                'b3-desc': 'No mandatory physical college presence. Access resources easily online or through regular books.',
+                'b3-sub': 'Study from Home',
+                'b4-title': 'Job Pathway',
+                'b4-desc': 'A powerful step forward to unlock high-paying corporate roles, promotions & government jobs.',
+                'b4-sub': 'Pathway to Job Opportunities',
+                'b5-title': 'Universal Access',
+                'b5-desc': 'Tailored syllabus support for students, veterans, housewives, and employed executives.',
+                'b5-sub': 'Accessible to Everyone',
+                'form-tag': 'Interactive Counselor Panel',
+                'form-title': 'Secure Your Callback Session Today!',
+                'form-desc': 'Our career advisors at Rohini Towers, Guntur will evaluate your educational background and suggest the perfect, fastest route to certified graduation or school clearance.',
+                'counter-active': 'Active admissions checked today:',
+                'counter-sub': '🔥 92% of seats are currently occupied. Complete registration to hold your slot.',
+                'contact-direct': 'Or Reach Out Instantly:',
+                'form-box-title': 'Free Consultation Form',
+                'lbl-name': 'Full Name *',
+                'lbl-phone': 'Mobile Number *',
+                'lbl-course': 'Target Program *',
+                'lbl-city': 'Current Location *',
+                'lbl-course-select': '-- Select Preferred Program --',
+                'lbl-msg': 'Any additional comments or previous fail details',
+                'btn-submit': 'Submit Inquiry Now',
+                'recent-queries': 'Recent Counseling Bookings:',
+                'faq-title': 'Frequently Asked Questions (FAQ)',
+                'faq-subtitle': 'Clear your common queries about one-year courses & distance learning options.',
+                'q1': 'Is the 10th and Inter Certificate valid for Government Job applications?',
+                'a1': 'Yes. The certificates issued by NIOS and APOSS (Andhra Pradesh Open School Society) are highly recognized by both Central & State Governments, standard universities, and private organizations for placements as well as higher studies exams like JEE or NEET.',
+                'q2': 'Can I complete both 10th and Intermediate simultaneously?',
+                'a2': 'You cannot do both together. However, you can complete 10th Class in one year directly if you had a school break, and upon passing, you can enroll for the direct Intermediate program. Both can be fast-tracked systematically according to Open School bylaws.',
+                'q3': 'What are the eligibility guidelines regarding age criteria?',
+                'a3': 'For direct admissions in the open school model, candidates aged 18 and onwards are highly encouraged. Our counselor team in Guntur can verify your certificates and guide you seamlessly.',
+                'q4': 'Do I have to attend classes physically daily?',
+                'a4': 'No daily physical attendance is necessary! We provide complete distance study guides, model test papers, and periodic weekend guidelines so that you can study comfortably from your house while keeping up with your full-time jobs.',
+                'loc-title': 'Visit Our Campus in Guntur',
+                'loc-desc': 'Our main administrative and educational counseling hub is located right in the heart of Guntur city. Easy connectivity by both railway station and local bus stand. Feel free to bring your certificates for instant direct spot registration evaluations!',
+                'loc-addr-details': 'Rohini Towers, 2nd Line 11th Cross Road,\nBrodipet, Guntur, Andhra Pradesh - 522002.',
+                'map-redirect': 'Open in Google Maps',
+                'footer-brand-desc': 'Providing flexible, government-recognized path solutions since 2011. Bridging school-break dropouts, working adults, and failures to successful accredited graduation streams.',
+                'footer-heading-streams': 'Our Key Portfolios',
+                'footer-heading-quick': 'Quick Navigation',
+                'footer-heading-contact': 'Admissions Office',
+                'footer-last-line': 'Join today... Step towards success!',
+                'sticky-call': 'Call Center',
+                'sticky-apply': 'Register Now',
+                'sticky-whatsapp': 'WhatsApp'
+            },
+            'te': {
+                'top-address': 'రోహిణి టవర్స్, బ్రాడీపేట 2/11, గుంటూరు',
+                'nav-home': 'హోమ్',
+                'nav-courses': 'కోర్సులు',
+                'nav-eligibility': 'అర్హత చెక్ చేయండి',
+                'nav-why': 'మా ప్రత్యేకత',
+                'nav-apply': 'ఆన్‌లైన్ అప్లికేషన్',
+                'hero-badge': 'అడ్మిషన్లు ప్రారంభమైనవి - విద్యా సంవత్సరం 2026-27',
+                'hero-breakup': '(5వ తరగతి నుండి 10వ తరగతి మధ్యలో ఆపేసిన వారికి సువర్ణ అవకాశం)',
+                'hero-direct': 'డైరెక్ట్',
+                'hero-one-year': 'ఒకే సంవత్సరంలో!',
+                'hero-boards': 'గుర్తింపు పొందిన బోర్డుల ద్వారా: NIOS, APOSS & దూర విద్యా విధానం',
+                'hero-groups-title': 'అందుబాటులో ఉన్న గ్రూపులు',
+                'hero-age-limit': '📌 18 సంవత్సరాల వయస్సు పైబడిన వారు నేరుగా ప్రవేశం పొందవచ్చు',
+                'hero-degrees-title': 'డైరెక్ట్ డిగ్రీ / పి.జి / ఐటిఐ కోర్సులు',
+                'hero-apply-now': 'ఇప్పుడే చేరండి / ఉచిత కౌన్సిలింగ్',
+                'hero-whatsapp': 'వాట్సాప్ ద్వారా సంప్రదించండి',
+                'badge-pass-lbl': 'హామీ',
+                'badge-pass-val': '100% పాస్',
+                'badge-pass-sub': 'గ్యారంటీ అసిస్టెన్స్',
+                'why-choose-header': 'ముఖ్యమైన అంశాలు',
+                'highlight-1': 'అనుభవజ్ఞులైన ఫ్యాకల్టీ',
+                'highlight-2': 'సులభమైన అడ్మిషన్ ప్రాసెస్',
+                'highlight-3': 'గుర్తింపు పొందిన డిగ్రీలు',
+                'highlight-4': 'సరైన ఫీజు విధానం',
+                'hero-urgency': '⚠️ డైరెక్ట్ వన్-ఇయర్ పరీక్షలకు పరిమిత సీట్లు మాత్రమే ఉన్నాయి! ఈరోజే దరఖాస్తు చేసుకోండి.',
+                'stat-pass': 'పాస్ విజయం',
+                'stat-exp': 'సంవత్సరాల అనుభవం',
+                'stat-alumni': 'ఉత్తీర్ణులైన విద్యార్థులు',
+                'stat-support': 'వ్యక్తిగత శ్రద్ధ',
+                'courses-title': 'మా విద్యా విభాగాలు',
+                'courses-subtitle': 'కింది కేటగిరీలలో మీకు కావలసిన కోర్సును ఎంచుకుని వివరాలను పరిశీలించండి.',
+                'tab-all': 'అన్ని కోర్సులు',
+                'tab-school': '10వ తరగతి',
+                'tab-inter': 'ఇంటర్మీడియట్',
+                'tab-ug': 'డిగ్రీ (UG)',
+                'tab-pg': 'పి.జి (PG)',
+                'badge-school': 'పాఠశాల విద్య',
+                'card-duration': '1 సంవత్సరం కోర్సు',
+                'card-10th-title': 'డైరెక్ట్ 10వ తరగతి',
+                'card-10th-desc': 'చదువు మధ్యలో ఆపేసిన వారికి, ఉద్యోగం చేసుకునే వారికి మరియు ఫెయిల్ అయిన వారికి అనువైన మార్గం.',
+                '10th-f-1': 'NIOS / APOSS సిలబస్ సపోర్ట్',
+                '10th-f-2': 'పై చదువులకు, ప్రభుత్వ ఉద్యోగాలకు అర్హత',
+                '10th-f-3': 'స్టడీ మెటీరియల్స్ ఉచితంగా అందజేయబడును',
+                'btn-inquiry': 'వివరాల కోసం అడగండి',
+                'badge-inter': 'హైయర్ సెకండరీ',
+                'card-inter-title': 'డైరెక్ట్ ఇంటర్మీడియట్',
+                'card-inter-desc': 'మీ కెరీర్ ఆకాంక్షలకు సరిపోయే గ్రూప్స్ ను ఎంచుకోండి. సైన్స్, కామర్స్, ఆర్ట్స్ ఆప్షన్స్ అందుబాటులో ఉన్నాయి.',
+                'groups-label': 'అందుబాటులో ఉన్న గ్రూపులు:',
+                'inter-f-1': 'డైరెక్ట్ వన్ ఇయర్ సర్టిఫికేషన్',
+                'inter-f-2': 'EAPCET, NEET మరియు IIT JEE రాయడానికి అర్హత',
+                'inter-f-3': 'రెగ్యులర్ మరియు వీకెండ్ గైడెన్స్ క్లాసులు',
+                'badge-ug': 'అండర్ గ్రాడ్యుయేట్',
+                'badge-distance': 'దూరవిద్యా విధానం',
+                'card-ug-title': 'డైరెక్ట్ డిగ్రీ కోర్సులు (UG)',
+                'card-ug-desc': 'యు.జి.సి గుర్తింపు పొందిన యూనివర్సిటీల నుండి నేరుగా డిగ్రీ సర్టిఫికేట్ సాధించండి.',
+                'ug-f-1': 'ఉద్యోగం చేస్తూనే చదువుకునే సదుపాయం',
+                'ug-f-2': 'ప్రభుత్వ గుర్తింపు పొందిన డిగ్రీలు',
+                'ug-f-3': 'సులువైన పరీక్షల గైడెన్స్',
+                'badge-pg': 'పోస్ట్ గ్రాడ్యుయేట్',
+                'card-pg-title': 'పోస్ట్ గ్రాడ్యుయేట్ కోర్సులు (PG)',
+                'card-pg-desc': 'మీ రెజ్యూమ్‌ను మెరుగుపరచుకోవడానికి మరియు కెరీర్‌లో ఉన్నత స్థాయికి చేరుకోవడానికి పీజీ కోర్సులు.',
+                'pg-f-1': 'సౌకర్యవంతమైన పరీక్షల విధానం',
+                'pg-f-2': 'ప్రమోషన్స్ మరియు ఉపాధ్యాయ ఉద్యోగాలకు చాలా ఉపయోగకరం',
+                'pg-f-3': 'ఆన్‌లైన్ కౌన్సిలింగ్ అసిస్టెన్స్',
+                'calc-title': 'అర్హత చెక్ చేయండి (ఇంటరాక్టివ్)',
+                'calc-subtitle': 'మీరు డైరెక్ట్ పరీక్షలకు అర్హులో కాదో 1 నిమిషంలో తెలుసుకోండి!',
+                'calc-q1': 'మీ ప్రస్తుత అత్యున్నత విద్యార్హత ఏమిటి?',
+                'calc-q2': 'ప్రస్తుతం మీ వయస్సు ఎంత?',
+                'calc-years': 'సంవత్సరాలు',
+                'calc-note': '*NIOS, APOSS మరియు గుర్తింపు పొందిన విశ్వవిద్యాలయాల నిబంధనల ప్రకారం అర్హత లెక్కించబడుతుంది.',
+                'calc-opt-select': '-- మీ ప్రస్తుత అర్హత ఎంచుకోండి --',
+                'calc-opt-1': '5వ తరగతి కంటే తక్కువ',
+                'calc-opt-2': '5వ - 9వ తరగతి (మధ్యలో ఆపేసిన వారు / ఫెయిల్)',
+                'calc-opt-3': '10వ తరగతి (మధ్యలో ఆపేసిన వారు / ఫెయిల్)',
+                'calc-opt-4': '10వ తరగతి పాస్',
+                'calc-opt-5': 'ఇంటర్మీడియట్ (మధ్యలో ఆపేసిన వారు / ఫెయిల్)',
+                'calc-opt-6': 'ఇంటర్మీడియట్ పాస్',
+                'calc-opt-7': 'డిగ్రీ పాస్',
+                'why-pretitle': 'మీ బంగారు భవిష్యత్తుకు తొలి అడుగు',
+                'why-title': 'మీ భవిష్యత్తుకు బంగారు అవకాశం!',
+                'why-subtitle': 'వందలాది మంది విద్యార్థులు తమ కెరీర్‌ను పునఃప్రారంభించడానికి శ్రీ వెంకటేశ్వర ఇన్స్టిట్యూషన్స్ ను ఎందుకు ఎంచుకుంటున్నారు.',
+                'b1-title': 'పని చేస్తూనే చదువు',
+                'b1-desc': 'ఉద్యోగం కోల్పోకుండా, మీ జీతానికి ఆటంకం లేకుండా అనుకూలమైన సమయంలో చదువుకోండి.',
+                'b1-sub': 'సమయాన్ని బట్టి చదివే సౌకర్యం',
+                'b2-title': 'గుర్తింపు పొందిన సర్టిఫికేట్లు',
+                'b2-desc': 'NIOS, APOSS మరియు గుర్తింపు పొందిన దూరవిద్యా విశ్వవిద్యాలయాల ద్వారా సర్టిఫికెట్లు పొందుతారు.',
+                'b2-sub': 'గుర్తింపు పొందిన సర్టిఫికేట్లు',
+                'b3-title': 'ఇంటి వద్దే చదువు',
+                'b3-desc': 'ప్రతిరోజూ కాలేజీకి వెళ్లాల్సిన అవసరం లేదు. సులభమైన స్టడీ మెటీరియల్స్ ఇంట్లోనే చదువుకోవచ్చు.',
+                'b3-sub': 'సులువైన, సౌకర్యవంతమైన విధానం',
+                'b4-title': 'ఉద్యోగ అవకాశాలకు మార్గం',
+                'b4-desc': 'మంచి జీతం గల కార్పొరేట్ ఉద్యోగాలు మరియు ప్రభుత్వ ఉద్యోగాలు సాధించడానికి బలమైన పునాది.',
+                'b4-sub': 'మీ కెరీర్ కు బలమైన అడుగు',
+                'b5-title': 'అందరికీ అందుబాటులో',
+                'b5-desc': 'విద్యార్థులు, గృహిణులు, ఉద్యోగులు అందరికీ సులభంగా అర్థమయ్యే బోధనా పద్ధతులు.',
+                'b5-sub': 'విద్యార్థులు, ఉద్యోగులు, గృహిణులు అందరికీ',
+                'form-tag': 'ఉచిత కౌన్సిలింగ్ విభాగం',
+                'form-title': 'ఈరోజే సీటు రిజర్వ్ చేసుకోండి!',
+                'form-desc': 'గుంటూరు బ్రాడీపేటలోని మా అనుభవజ్ఞులైన సలహాదారులు మీ చదువు వివరాలను పరిశీలించి సరైన మార్గాన్ని సూచిస్తారు.',
+                'counter-active': 'ఈ రోజు అప్లై చేసిన విద్యార్థులు:',
+                'counter-sub': '🔥 92% సీట్లు ఇప్పటికే భర్తీ చేయబడ్డాయి. వెంటనే రిజిస్టర్ చేసుకోండి.',
+                'contact-direct': 'నేరుగా కాల్ చేయండి:',
+                'form-box-title': 'ఉచిత సలహా ఫారమ్',
+                'lbl-name': 'పూర్తి పేరు *',
+                'lbl-phone': 'మొబైల్ నంబర్ *',
+                'lbl-course': 'చేరదలిచిన కోర్సు *',
+                'lbl-city': 'ప్రస్తుత నివాస స్థలం *',
+                'lbl-course-select': '-- కోర్సును ఎంచుకోండి --',
+                'lbl-msg': 'మీ పూర్వ చదువు వివరాలు (ఫెయిల్/గ్యాప్ ఇయర్స్) తెలపండి',
+                'btn-submit': 'కౌన్సిలింగ్ కొరకు సబ్మిట్ చేయండి',
+                'recent-queries': 'ఇటీవలి బుకింగ్‌లు:',
+                'faq-title': 'తరచుగా అడిగే ప్రశ్నలు (FAQ)',
+                'faq-subtitle': 'వన్-ఇయర్ కోర్సులు మరియు దూరవిద్యా విధానం గురించి మీ అనుమానాలను నివృత్తి చేసుకోండి.',
+                'q1': '10వ తరగతి మరియు ఇంటర్ సర్టిఫికెట్లు ప్రభుత్వ ఉద్యోగాలకు చెల్లుతాయా?',
+                'a1': 'ఖచ్చితంగా చెల్లుతాయి. NIOS మరియు APOSS బోర్డుల ద్వారా జారీ చేయబడిన సర్టిఫికెట్లు కేంద్ర మరియు రాష్ట్ర ప్రభుత్వాలు, అన్ని విశ్వవిద్యాలయాల చేత గుర్తింపు పొందాయి.',
+                'q2': 'నేను ఒకేసారి 10వ తరగతి మరియు ఇంటర్మీడియట్ పూర్తి చేయవచ్చా?',
+                'a2': 'ఒకేసారి రెండు చేయడానికి వీలుండదు. అయితే, 10వ తరగతి విజయవంతంగా పూర్తి చేసిన వెంటనే, తదుపరి సంవత్సరంలో డైరెక్ట్ ఇంటర్మీడియట్ పరీక్షలు రాయవచ్చు.',
+                'q3': 'వయస్సు నిబంధనలు ఏ విధంగా ఉంటాయి?',
+                'a3': 'డైరెక్ట్ ఓపెన్ స్కూల్ అడ్మిషన్స్ కొరకు 18 సంవత్సరాలు పైబడిన వారు నేరుగా ప్రవేశం పొందవచ్చు. పూర్తి వివరాలకు మా ప్రతినిధిని సంప్రదించండి.',
+                'q4': 'నేను ప్రతిరోజూ కాలేజీకి హాజరు కావాలా?',
+                'a4': 'అవసరం లేదు! ఉద్యోగం చేసుకునే వారి సౌకర్యార్థం మేము మెటీరియల్స్ మరియు వీకెండ్ గైడెన్స్ ఇస్తాము, తద్వారా మీరు ఇంట్లో ఉంటూనే చదువుకోవచ్చు.',
+                'loc-title': 'గుంటూరు బ్రాంచ్ ను సందర్శించండి',
+                'loc-desc': 'మా ప్రధాన అడ్మినిస్ట్రేటివ్ ఆఫీస్ గుంటూరు నడిబొడ్డున ఉంది. రైల్వే స్టేషన్ మరియు బస్టాండ్ నుండి సులభమైన రవాణా సదుపాయం ఉంది. మీ పాత సర్టిఫికెట్లతో నేరుగా వచ్చి అడ్మిషన్ పొందవచ్చు!',
+                'loc-addr-details': 'రోహిణి టవర్స్, బ్రాడీపేట 2వ లైన్, 11వ క్రాస్ రోడ్,\nగుంటూరు, ఆంధ్రప్రదేశ్ - 522002.',
+                'map-redirect': 'గూగుల్ మ్యాప్స్ లో చూడండి',
+                'footer-brand-desc': '2011 నుండి ఉత్తమ విద్యా సేవలను అందిస్తూ, ఎంతో మంది విద్యార్థులను విజయం వైపు నడిపిస్తున్న విశ్వసనీయ సంస్థ.',
+                'footer-heading-streams': 'కీలక విభాగాలు',
+                'footer-heading-quick': 'త్వరిత లింకులు',
+                'footer-heading-contact': 'అడ్మిషన్ల కార్యాలయం',
+                'footer-last-line': 'ఈరోజే చేరండి... విజయాల వైపు అడుగు వేయండి!',
+                'sticky-call': 'కాల్ సెంటర్',
+                'sticky-apply': 'రిజిస్టర్ చేసుకోండి',
+                'sticky-whatsapp': 'వాట్సాప్'
+            }
+        };
+
+        // Initialize elements
+        window.addEventListener('DOMContentLoaded', () => {
+            applyTranslations();
+            updateLiveVisitors();
+            setInterval(updateLiveVisitors, 8000);
+        });
+
+        // Function to toggle site language
+        function toggleLanguage() {
+            currentLanguage = (currentLanguage === 'te') ? 'en' : 'te';
+            applyTranslations();
+
+            // Re-trigger eligibility checker if values exist
+            calculateEligibility();
+        }
+
+        // Apply translations based on 'data-translate' attribute
+        function applyTranslations() {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (TRANSLATIONS[currentLanguage][key]) {
+                    el.innerText = TRANSLATIONS[currentLanguage][key];
+                }
+            });
+
+            // Handle titles and input placeholders which can't be translated by basic innerText
+            const mainTitle = document.getElementById('main-title');
+            const subTitle = document.getElementById('sub-title');
+            const langBtnText = document.getElementById('lang-btn-text');
+
+            if (currentLanguage === 'te') {
+                mainTitle.innerText = "శ్రీ వెంకటేశ్వర ఇన్స్టిట్యూషన్స్";
+                subTitle.innerText = "రోహిణి టవర్స్, బ్రాడీపేట, గుంటూరు";
+                langBtnText.innerText = "Read in English";
+
+                // Form placeholders
+                document.getElementById('form-name').placeholder = "విద్యార్థి పూర్తి పేరు వ్రాయండి";
+                document.getElementById('form-phone').placeholder = "10 అంకెల మొబైల్ నంబర్";
+                document.getElementById('form-city').placeholder = "ఉదా: గుంటూరు / విజయవాడ";
+                document.getElementById('form-msg').placeholder = "మీ గత చదువు లేదా గ్యాప్ వివరాలు ఇక్కడ వ్రాయండి...";
+            } else {
+                mainTitle.innerText = "Sri Venkateswara Institutions";
+                subTitle.innerText = "Rohini Towers, Brodipet, Guntur";
+                langBtnText.innerText = "తెలుగు లో చదవండి";
+
+                // Form placeholders
+                document.getElementById('form-name').placeholder = "Enter student's full name";
+                document.getElementById('form-phone').placeholder = "10 Digit Phone Number";
+                document.getElementById('form-city').placeholder = "e.g. Guntur / Vijayawada";
+                document.getElementById('form-msg').placeholder = "Tell us if you failed 9th / 10th / Inter or have gap years...";
+            }
+        }
+
+        // Toggle mobile nav panel
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = "fa-solid fa-xmark text-xl";
+            } else {
+                menu.classList.add('hidden');
+                icon.className = "fa-solid fa-bars text-xl";
+            }
+        }
+
+        // Course Tab Filtering
+        function filterCourses(category) {
+            // Update active state in tabs
+            const tabs = document.querySelectorAll('.course-tab-btn');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-brandBlue', 'text-white', 'active');
+                tab.classList.add('bg-gray-100', 'text-gray-600', 'hover:bg-gray-200');
+            });
+
+            // Set clicked tab to active
+            const clickedTab = document.getElementById(`tab-${category}`);
+            clickedTab.classList.remove('bg-gray-100', 'text-gray-600', 'hover:bg-gray-200');
+            clickedTab.classList.add('bg-brandBlue', 'text-white', 'active');
+
+            // Show/Hide Cards
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Auto select program from card click
+        function selectCourseForInquiry(courseName) {
+            const selectEl = document.getElementById('form-course');
+            selectEl.value = courseName;
+
+            // Smoothly focus on form name input
+            setTimeout(() => {
+                document.getElementById('form-name').focus();
+            }, 100);
+        }
+
+        // Simulated real-time visitors counter to create active enrollment hype
+        function updateLiveVisitors() {
+            const randomCount = Math.floor(Math.random() * (62 - 35 + 1)) + 35;
+            const visitorCountEl = document.getElementById('live-visitor-count');
+            if (currentLanguage === 'te') {
+                visitorCountEl.innerText = `${randomCount} మంది విద్యార్థులు పరిశీలిస్తున్నారు`;
+            } else {
+                visitorCountEl.innerText = `${randomCount} Applicants Active`;
+            }
+        }
+
+        // Interactive Eligibility Calculator Logic
+        function calculateEligibility() {
+            const education = document.getElementById('user-current-education').value;
+            const age = parseInt(document.getElementById('user-age').value) || 0;
+            const resultBox = document.getElementById('eligibility-result');
+
+            if (!education || !age) {
+                resultBox.classList.add('hidden');
+                return;
+            }
+
+            resultBox.classList.remove('hidden');
+            resultBox.className = "rounded-2xl p-5 border-2 transition-all duration-300 ";
+
+            let title = "";
+            let description = "";
+            let actionBtnText = "";
+            let selectedStream = "";
+            let isEligible = false;
+
+            if (currentLanguage === 'te') {
+                if (age < 14) {
+                    resultBox.classList.add('bg-red-50', 'border-red-400', 'text-red-900');
+                    title = "కనీస వయస్సు సరిపోలేదు";
+                    description = "ఓపెన్ స్కూల్ పరీక్షలు రాయడానికి కనీసం 14 సంవత్సరాలు నిండి ఉండాలి. దయచేసి ఉచిత సలహా కోసం సంప్రదించండి.";
+                    actionBtnText = "ప్రతినిధితో మాట్లాడండి";
+                } else if (education === 'below-5th' || education === '5th-9th-fail') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "డైరెక్ట్ 10వ తరగతికి మీరు అర్హులు! 🎉";
+                    description = `మీకు ${age} సంవత్సరాల వయస్సు ఉన్నందున, మీరు ఎటువంటి ముందస్తు సర్టిఫికెట్ లేకుండా నేరుగా APOSS / NIOS ద్వారా 10వ తరగతి ఒకే సంవత్సరంలో పూర్తి చేయవచ్చు.`;
+                    actionBtnText = "10వ తరగతి సీటు బుక్ చేయండి";
+                    selectedStream = "Direct 10th";
+                    isEligible = true;
+                } else if (education === '10th-fail' || education === '10th-pass' || education === 'inter-fail') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "డైరెక్ట్ ఇంటర్మీడియట్ కి మీరు అర్హులు! 🎉";
+                    description = `మీరు ఒకే సంవత్సరంలో నేరుగా ఇంటర్మీడియట్ (MPC, BiPC, CEC, HEC) పూర్తి చేయవచ్చు. ఇది పై చదువులకు మరియు ప్రభుత్వ ఉద్యోగాలకు 100% చెల్లుతుంది.`;
+                    actionBtnText = "ఇంటర్మీడియట్ సీటు బుక్ చేయండి";
+                    selectedStream = "Direct Intermediate";
+                    isEligible = true;
+                } else if (education === 'inter-pass') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "డైరెక్ట్ డిగ్రీ (B.A / B.Com / B.Sc) కి మీరు అర్హులు! 🎉";
+                    description = `మీరు దూరవిద్యా విధానం ద్వారా నేరుగా డిగ్రీ పూర్తి చేసుకోవచ్చు. ఉద్యోగం చేస్తూనే చదువుకోవడానికి ఇది సువర్ణ అవకాశం.`;
+                    actionBtnText = "డిగ్రీ సీటు బుక్ చేయండి";
+                    selectedStream = "Direct Degree / UG";
+                    isEligible = true;
+                } else if (education === 'degree-pass') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "పోస్ట్ గ్రాడ్యుయేషన్ (MBA / MCA / MA) కి మీరు అర్హులు! 🎉";
+                    description = `మీరు పీజీ కోర్సులకు నేరుగా ప్రవేశం పొందవచ్చు. మీ ప్రమోషన్లు మరియు కెరీర్ అభివృద్ధికి ఇది ఎంతో ఉపయోగకరం.`;
+                    actionBtnText = "పీజీ సీటు బుక్ చేయండి";
+                    selectedStream = "Postgraduate / PG";
+                    isEligible = true;
+                }
+            } else {
+                // English calculation texts
+                if (age < 14) {
+                    resultBox.classList.add('bg-red-50', 'border-red-400', 'text-red-900');
+                    title = "Age Criteria Not Met";
+                    description = "Minimum age to register for open board examinations is 14 years. Please request counseling for alternative options.";
+                    actionBtnText = "Consult counselor";
+                } else if (education === 'below-5th' || education === '5th-9th-fail') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "Eligible for Direct 10th Standard! 🎉";
+                    description = `Since you are ${age} years old, you can directly register and clear the 10th class in a single year under APOSS / NIOS boards without pre-requisite school certificates.`;
+                    actionBtnText = "Reserve 10th Class Seat";
+                    selectedStream = "Direct 10th";
+                    isEligible = true;
+                } else if (education === '10th-fail' || education === '10th-pass' || education === 'inter-fail') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "Eligible for Direct Intermediate! 🎉";
+                    description = `You can directly register for the Intermediate program in a single year (Groups: MPC, BiPC, CEC, HEC). Fully valid for NEET, EAPCET, and Government Job exams.`;
+                    actionBtnText = "Reserve Intermediate Seat";
+                    selectedStream = "Direct Intermediate";
+                    isEligible = true;
+                } else if (education === 'inter-pass') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "Eligible for Direct UG Degree! 🎉";
+                    description = `You can clear B.A, B.Com, B.Sc, or BBA through flexible distance or weekend guidance streams. Great for working professionals.`;
+                    actionBtnText = "Reserve Degree Seat";
+                    selectedStream = "Direct Degree / UG";
+                    isEligible = true;
+                } else if (education === 'degree-pass') {
+                    resultBox.classList.add('bg-green-50', 'border-green-400', 'text-green-900');
+                    title = "Eligible for Postgraduate Courses! 🎉";
+                    description = `Directly register for MBA, MCA, M.Com, M.Sc or M.A programs. Supercharge your professional trajectory & secure career advancements.`;
+                    actionBtnText = "Reserve PG Seat";
+                    selectedStream = "Postgraduate / PG";
+                    isEligible = true;
+                }
+            }
+
+            // Injected inner HTML for beautiful responsive output
+            resultBox.innerHTML = `
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h4 class="font-extrabold text-base md:text-lg mb-1">${title}</h4>
+                        <p class="text-xs md:text-sm text-gray-700 leading-relaxed">${description}</p>
+                    </div>
+                    ${isEligible ? `
+                        <button onclick="selectCourseForInquiry('${selectedStream}')" class="bg-brandBlue text-white font-bold text-xs px-4 py-2.5 rounded-lg whitespace-nowrap hover:bg-brandRed transition-all">
+                            ${actionBtnText} &rarr;
+                        </button>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        // Toggle Accordion FAQs
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                ans.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Submitting Inquiry Form & local caching to simulate lead management
+        function submitForm(event) {
+            event.preventDefault();
+            const notification = document.getElementById('form-notification');
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const course = document.getElementById('form-course').value;
+            const city = document.getElementById('form-city').value;
+            const msg = document.getElementById('form-msg').value;
+
+            // Trigger success message inside modal block
+            notification.classList.remove('hidden', 'bg-red-100', 'text-red-800', 'bg-green-100', 'text-green-800');
+            notification.classList.add('bg-green-100', 'text-green-800', 'p-4');
+
+            if (currentLanguage === 'te') {
+                notification.innerHTML = `
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-xl"></i>
+                        <div>
+                            <p class="font-extrabold">దరఖాస్తు విజయవంతంగా సమర్పించబడింది!</p>
+                            <p class="text-xs font-normal">మా గుంటూరు బ్రాడీపేట కౌన్సిలర్ ప్రతినిధి 15 నిమిషాల్లో మిమ్మల్ని ఫోన్ ద్వారా సంప్రదిస్తారు.</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                notification.innerHTML = `
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-xl"></i>
+                        <div>
+                            <p class="font-extrabold">Inquiry Submitted Successfully!</p>
+                            <p class="text-xs font-normal">Our chief career counselor from Brodipet Guntur will call you back within 15 minutes.</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Clean up the input values
+            document.getElementById('admission-inquiry-form').reset();
+
+            // Clear notice after 8 seconds
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 8000);
+        }
+    </script>
+</body>
+
+</html>
